@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 23px;
+    background-color: rgb(189, 212, 227);
+    
+}
+
+
+body{
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+ text-align: center;
+ font-size: 1.2rem;
+ margin-right: 4rem;
+ padding: 10px;
+}
+
+
+nav li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:  black;
+}
+/* mobile nav */
+.kibab{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.mobinav{
+    background-color: #ffffff;
+    z-index: 6;
+   transition: 1s ease;
+   display: none;
+   width: 100%;
+   
+}
+.mobinav ul{
+    width: 100%;
+ gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.gallary_intro{
+    background-image: url(../images/music-sheet-5117328_1280.jpg);
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.gallary_intro::before{
+width: 100%;
+height: 100%;
+content: "";
+position: absolute;
+background-color: #08080846;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.row{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 7rem;
+    padding-bottom: 7rem;
+}
+.column{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+img{
+   width: 100%;
+}
+
+.large{
+    transform: scale(2);
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.5);
+    transform: translate(-50%,-50%);
+    
+}

@@ -1,0 +1,87 @@
+@media screen and (max-width:600px){
+    header nav{
+        display: none;
+    }
+    .kibab{
+        display: inline;
+    }
+    .mobinav{
+        transform: all 1s ease;
+        z-index: 1000;
+        position: absolute;
+    }
+    
+}
+header .logo{
+    font-size: 25px;
+    color: rgb(250, 44, 78);
+    cursor:pointer;
+
+position: relative;}
+
+.drop_nav{
+    cursor: pointer;
+
+    position: relative;
+}
+.drop_nav ol{
+   
+    top: 200%;
+  left: -90%;
+    z-index: 90;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    display: none;
+   background-color: rgba(254, 252, 252, 0.301);
+   padding-left: 52px;
+   padding-right: 52px;
+   padding-top: 10px;
+   
+   
+
+}
+.drop_nav ol li a:hover{
+    color: aqua;
+}
+.see:hover ~ ol {
+    display: flex;
+    
+   
+}
+.see::before{
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height:8rem;
+    left: -70%;
+    z-index: 2;
+   
+    
+}
+.see2::before{
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height:15rem;
+    z-index: 2;
+   left: -100%;
+    top: 40%;
+
+   
+    }
+        .see2:hover ~ ol{
+            display: flex;
+           
+        }
+        .see2 + ol{
+            gap: 2rem;
+        }
+        .drop_nav ol li a{
+            
+            color: white;
+        }
+        
+        

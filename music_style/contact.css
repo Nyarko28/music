@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 23px;
+    background-color: rgb(189, 212, 227);
+    
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+ text-align: center;
+ font-size: 1.2rem;
+ margin-right: 4rem;
+ padding: 10px;
+}
+
+
+nav li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:  black;
+}
+/* mobile nav */
+.kibab{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.mobinav{
+    background-color: #ffffff;
+    z-index: 6;
+   transition: 1s ease;
+   display: none;
+   width: 100%;
+   
+}
+.mobinav ul{
+    width: 100%;
+ gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../images/istockphoto-1471683196-612x612.jpg);
+background-repeat: repeat;
+background-position: cente;
+background-size:covr ;
+
+}
+
+.contact_img {
+    width: 100%;
+    height: 95vh;
+}
+.contact_img img{
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.input_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.input_box{
+    width: 50%;
+    padding:0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.input_box input[type=text],button{
+    width: 100%;
+    height: 2.3rem;
+    border: none;
+    border-radius: 19px;
+    box-shadow: 1px 1px 4px;
+    outline: none;
+}
+input::placeholder{
+    padding-left: 13px;
+}
+.input_box textarea{
+    min-height: 100px;
+    width: 100%;
+    box-shadow: 1px 1px 4px;
+    border: none;
+    border-radius: 19px;
+    outline: none;
+}
+.input_box textarea::placeholder{
+ 
+   padding: 10px;
+}
+.support_team p{
+    padding: 10px;
+ 
+}
+.support_team{
+    height:80%;
+
+     box-shadow: 1px 2px 4px;
+     padding: 10px;
+     margin-top: -4.5rem;
+     width: 52%;
+}
+.card{
+width: 32%;
+text-align: center;
+height:100%;
+
+}
+.card_container{
+    display: flex;
+    height: 37vh;
+    justify-content: center;
+   gap: .5rem;
+}
+.card img{
+    width:70%;
+    border-radius: 50%;
+}
+.input_box button{
+    background-color: #2d2828;
+    color: white;
+    font-size: 27px;
+    }
+    .input_box button:hover{
+    transition: all .4s;
+    background-color:#4c4747;
+}
+iframe{
+    width: 90%;
+    height: 60vh;
+  margin-left: 5%;
+  margin-top: 3rem;
+}
